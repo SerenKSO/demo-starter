@@ -62,9 +62,10 @@ console.log('\n')
 
 
 
-//forEach ile
+//forEach
 let totalPrice = 0
 let totalProductCount = 0
+
 let cartTotal1 = carts.forEach(cart => {
 	totalPrice += (cart.unitPrice * cart.quantity)
 	totalProductCount += cart.quantity
@@ -72,13 +73,14 @@ let cartTotal1 = carts.forEach(cart => {
 
 let cartTotals1 = { totalPrice: totalPrice, totalProductCount: totalProductCount }
 
-console.log('forEach ile: ', cartTotals1)
+console.log('forEach: ', cartTotals1)
 console.log('\n')
 
 
-// map ile
+// map 
 let totalPrice2 = 0
 let totalProductCount2 = 0
+
 carts.map(cart => {
 	totalPrice2 += cart.quantity * cart.unitPrice
 	totalProductCount2 += cart.quantity
@@ -90,17 +92,7 @@ let cartTotals2 = {
 	totalProductCount2: totalProductCount2
 }
 
-console.log('map ile: ', cartTotals2)
+console.log('map: ', cartTotals2)
 
 console.log('\n')
 
-// reduce
-
-let totalCartPrice = carts.reduce((acc, cart) => acc + (cart.unitPrice * cart.quantity), 0)
-let totalCartQuantity = carts.reduce((acc, cart) => acc + cart.quantity, 0)
-
-
-console.log('reduce ile: ', {
-	totalCartPrice: totalCartPrice,
-	totalCartQuantity: totalCartQuantity
-})
