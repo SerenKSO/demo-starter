@@ -50,3 +50,20 @@ let odemeBilgileri = {
 	krediTipi: "İhtiyaç Kredisi",
 };
 console.log(odemeBilgileri);
+
+//Değer Tipler
+
+let number1 = 10;
+let number2 = 20;
+number1 = number2;
+number2 = 100;
+console.log(number1);
+
+//Referans Tipler
+//array, object
+
+let product1 ={id:1, name:"laptop", unitPrice:1000};
+let product2 ={id:2, name:"mouse", unitPrice:102};
+product1 = product2;
+product2.name = "Keyboard";
+console.log(product1);
