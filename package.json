@@ -2,12 +2,16 @@
   "name": "demo-statre",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     
     "start": "node scope.js",
     "start-scope": "node scope.js",
-    "start-restAndSpread": "node restAndSpread.js"
-    
+    "start-restAndSpread": "node restAndSpread.js",
+    "start-destructuring": "node destructuring.js",
+    "start-oop":"node oop.js",
+    "start-oop2":"node oop2.js",
+    "start-oop3":"node oop3.js"
     
   },
   "keywords": [],

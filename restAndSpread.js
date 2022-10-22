@@ -1,11 +1,11 @@
-function sizCevapVerin()
+export function sizCevapVerin()
 {
 return [10,20,30,40,50];
 
 }
 // Rest Operatör
 //parametreleri bir diziye dönüştürür toparlar
-function sum(...numbers){
+export function sum(...numbers){
    // console.info("n3", n3);
     let total =0;
         for (let i = 0; i < numbers.length; i++) {
@@ -22,7 +22,7 @@ function avg(kisiSayisi,...numbers){
 
 //Spread Operatpor
 //bir dizi elemanlarını tek tek parametre olarak gönderir birnirinden ayırır
-const cevaplariniz = sizCevapVerin();
+export const cevaplariniz = sizCevapVerin();
 //const res = sum(...cevaplariniz);
 const res = avg(26,...cevaplariniz);
 console.log(res);
