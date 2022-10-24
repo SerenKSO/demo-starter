@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     
-    "start": "node scope.js",
+    "start": "node oopHw1-kodlamaio.js",
     "start-scope": "node scope.js",
     "start-restAndSpread": "node restAndSpread.js",
     "start-destructuring": "node destructuring.js",
     "start-oop":"node oop.js",
     "start-oop2":"node oop2.js",
     "start-oop3":"node oop3.js"
+    
     
   },
   "keywords": [],
